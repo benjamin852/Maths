@@ -7,10 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "AdditionQuestion.h"
+#import "Question.h"
 #import "InputHandling.h"
 #import "ScoreKeeper.h"
 #import "QuestionManager.h"
+#import "AdditionQuestion.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -23,10 +24,13 @@ int main(int argc, const char * argv[]) {
     while (true) { //true= while it is true it will keep running.
                        
         AdditionQuestion *newQuestion = [[AdditionQuestion alloc] init];
+        [newQuestion generateQuestion];
+        [newQuestion generateAnswer];
+        
         [scoreKeeper.mathObjects addObject:newQuestion];
         [questionManager.questions addObject:newQuestion];
         
-        NSLog(@"%ld, %ld", newQuestion.valueOne, newQuestion.valueTwo);
+        NSLog(@"%ld, %ld", newQuestion.leftValue, newQuestion.rightValue);
             
         
         NSString *userInput = [inputHandling processInput]; //this passes the method from the inputHandling class

@@ -7,7 +7,7 @@
 //
 
 #import "ScoreKeeper.h"
-#import "AdditionQuestion.h"
+#import "Question.h"
 
 @implementation ScoreKeeper
 
@@ -26,7 +26,7 @@
     NSInteger right=0;
     NSInteger wrong=0;
    
-    for (AdditionQuestion *addition in self.mathObjects) {
+    for (Question *addition in self.mathObjects) {
         if (addition.right) {
             right += 1;
         }
