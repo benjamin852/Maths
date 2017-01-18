@@ -16,6 +16,7 @@
 		9BDA9DFF1E26D9B40003DC1D /* SubtractionQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BDA9DFE1E26D9B40003DC1D /* SubtractionQuestion.m */; };
 		9BDA9E021E26D9C70003DC1D /* MultiplicationQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BDA9E011E26D9C70003DC1D /* MultiplicationQuestion.m */; };
 		9BDA9E051E26D9D00003DC1D /* Division.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BDA9E041E26D9D00003DC1D /* Division.m */; };
+		9BDA9E0E1E26E9E60003DC1D /* QuestionFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BDA9E0D1E26E9E60003DC1D /* QuestionFactory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -49,6 +50,8 @@
 		9BDA9E011E26D9C70003DC1D /* MultiplicationQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiplicationQuestion.m; sourceTree = "<group>"; };
 		9BDA9E031E26D9D00003DC1D /* Division.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Division.h; sourceTree = "<group>"; };
 		9BDA9E041E26D9D00003DC1D /* Division.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Division.m; sourceTree = "<group>"; };
+		9BDA9E0C1E26E9E60003DC1D /* QuestionFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionFactory.h; sourceTree = "<group>"; };
+		9BDA9E0D1E26E9E60003DC1D /* QuestionFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionFactory.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +101,8 @@
 				9BDA9E011E26D9C70003DC1D /* MultiplicationQuestion.m */,
 				9BDA9E031E26D9D00003DC1D /* Division.h */,
 				9BDA9E041E26D9D00003DC1D /* Division.m */,
+				9BDA9E0C1E26E9E60003DC1D /* QuestionFactory.h */,
+				9BDA9E0D1E26E9E60003DC1D /* QuestionFactory.m */,
 			);
 			path = MathsDay2;
 			sourceTree = "<group>";
@@ -167,6 +172,7 @@
 				9BDA9DF61E269B600003DC1D /* ScoreKeeper.m in Sources */,
 				9BDA9DF31E2697960003DC1D /* inputHandling.m in Sources */,
 				9BDA9DCF1E2555360003DC1D /* main.m in Sources */,
+				9BDA9E0E1E26E9E60003DC1D /* QuestionFactory.m in Sources */,
 				9BDA9DD71E2563560003DC1D /* Question.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

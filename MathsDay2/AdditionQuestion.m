@@ -15,7 +15,6 @@
     self.question = [NSString stringWithFormat:@"%ld + %ld ?", self.leftValue, self.rightValue];
 }
 - (void) generateAnswer {
-    self.answer = self.rightValue + self.rightValue; 
-}
+    self.answer = self.rightValue + self.leftValue;
 }
 @end

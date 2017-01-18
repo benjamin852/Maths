@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "8F9FFE29E47C54EC2BB92A29C4DC2BB7C0FA89DB",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "5CA8AD7D873DD45241DC7B42214034FEA98C9641" : 9223372036854775807,
+    "8F9FFE29E47C54EC2BB92A29C4DC2BB7C0FA89DB" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "34287DD4-9BD4-4ACB-A8C1-B85BEDB29238",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "5CA8AD7D873DD45241DC7B42214034FEA98C9641" : "",
+    "8F9FFE29E47C54EC2BB92A29C4DC2BB7C0FA89DB" : "MathsDay2\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "MathsDay2",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "MathsDay2.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/benjamin852\/Word-Effects.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5CA8AD7D873DD45241DC7B42214034FEA98C9641"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/benjamin852\/Maths.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8F9FFE29E47C54EC2BB92A29C4DC2BB7C0FA89DB"
+    }
+  ]
+}

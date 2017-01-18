@@ -12,53 +12,55 @@
 #import "ScoreKeeper.h"
 #import "QuestionManager.h"
 #import "AdditionQuestion.h"
+#import "QuestionFactory.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
-    InputHandling *inputHandling = [[InputHandling alloc] init]; //this connects to the class
-    ScoreKeeper *scoreKeeper = [[ScoreKeeper alloc]init];
-    QuestionManager *questionManager = [[QuestionManager alloc] init];
+        InputHandling *inputHandling = [[InputHandling alloc] init]; //this connects to the class
+        ScoreKeeper *scoreKeeper = [[ScoreKeeper alloc]init];
+        QuestionManager *questionManager = [[QuestionManager alloc] init];
+        QuestionFactory *questionFactory = [[QuestionFactory alloc] init];
         
         
-    while (true) { //true= while it is true it will keep running.
-                       
-        AdditionQuestion *newQuestion = [[AdditionQuestion alloc] init];
-        [newQuestion generateQuestion];
-        [newQuestion generateAnswer];
         
-        [scoreKeeper.mathObjects addObject:newQuestion];
-        [questionManager.questions addObject:newQuestion];
-        
-        NSLog(@"%ld, %ld", newQuestion.leftValue, newQuestion.rightValue);
+        while (true) { //true= while it is true it will keep running.
+            Question *question = [questionFactory generateRandomQuestion];
+            [question generateQuestion];
+            [question generateAnswer];
             
-        
-        NSString *userInput = [inputHandling processInput]; //this passes the method from the inputHandling class
-        [newQuestion answerWithInput:userInput];
-        NSLog(@"you typed %@ <---", userInput);
+            [scoreKeeper.mathObjects addObject:question];
+            [questionManager.questions addObject:question];
             
-        if ([userInput isEqualToString: @"quit"]) {
-            break;
-        }
+            NSLog(@"%@", question.question);
             
-        NSLog (@"The correct answer is: %ld", newQuestion.answer);
             
-        
-        
-        if (newQuestion.right) {
-        NSLog(@"your right!");
-        } else {
-            NSLog(@"your wrong");
-        
-        
-       
+            NSString *userInput = [inputHandling processInput]; //this passes the method from the inputHandling class
+            [question answerWithInput:userInput];
+            NSLog(@"you typed %@ <---", userInput);
             
-     NSLog (@"%@", [scoreKeeper totalScore]);
-     NSLog(@"%@", [questionManager timeOutput]);
+            if ([userInput isEqualToString: @"quit"]) {
+                break;
+            }
             
+            NSLog (@"The correct answer is: %ld", question.answer);
+            
+            
+            
+            if (question.right) {
+                NSLog(@"your right!");
+            } else {
+                NSLog(@"your wrong");
+                
+                
+                
+                
+                NSLog (@"%@", [scoreKeeper totalScore]);
+                NSLog(@"%@", [questionManager timeOutput]);
+                
+            }
         }
     }
-        }
     
     
     
